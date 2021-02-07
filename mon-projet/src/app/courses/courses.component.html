@@ -1,0 +1,4 @@
+<p>Interpolation évaluée à runtime : {{ getTitle() }}  : {{nb_etuds}}</p>
+<input type="text" [(ngModel)]="titre" />
+<app-course [contenu]="UE[0]" (newNb)="onNewNb($event)"></app-course>
+<app-course [contenu]="UE[1]" (newNb)="onNewNb($event)"></app-course>
